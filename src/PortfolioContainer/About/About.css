@@ -1,0 +1,89 @@
+#experience{
+    margin: 2px 2px 30px 0px;
+}
+
+.experience_container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience_container > div{
+    background: #000;
+    color: #fff;
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 2s;
+}
+
+.experience_container > div:hover{
+   background : transparent;
+   border-color: #ff3322;
+   cursor: default;
+   background: #fff;
+   color: #000;
+}
+
+.experience_container > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color:#ff3322;
+
+}
+
+.experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience_details{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.experience_details-icon{
+    margin-top: 6px;
+
+}
+
+.skill-title{
+    padding-left: 25%;
+    padding-top: 15px;
+    font-size: 30px;
+    color:#ff5823;
+    font-weight: 900;
+    font-style: oblique;
+    
+}
+
+@media  screen and (max-width: 1024px) {
+    .experience_container{
+        grid-template-columns: 1fr;
+    }
+
+    .experience_container > div {
+     width: 80%;
+     padding: 2rem;
+     margin: 0 auto;
+    }
+
+    .experience_content{
+        padding: 1rem;
+    }
+}
+
+@media  screen and (max-width: 600px){
+   .experience_container{
+       gap: 1rem;
+
+   }
+   .experience_container > div{
+       width: 100%;
+       padding: 2rem 1rem;
+        
+   }
+}
